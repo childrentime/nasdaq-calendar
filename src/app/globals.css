@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +27,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.App {
+  padding: 24px 36px;
+}
+
+.form {
+  padding: 12px !important;
+}
+
+.addCustom {
+  margin-bottom: 12px;
 }
