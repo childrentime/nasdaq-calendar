@@ -169,7 +169,7 @@ export default function Main(props: IProps) {
 
   const syncData = async (date: Dayjs, symbols: string[] = []) => {
     const data = await fetch(
-      `http://localhost:3000/api?date=${date.format("YYYY-MM-DD")}`
+      `/api?date=${date.format("YYYY-MM-DD")}`
     );
     const json = await data.json();
     const rows = (json?.data?.data?.rows || []).filter((row: any) => {
